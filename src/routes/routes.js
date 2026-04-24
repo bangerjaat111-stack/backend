@@ -1,8 +1,9 @@
-import express from 'express';
-import {createuser}from '../controller/user_controller.js'
+import express from 'express'
+import {register} from '../controller/user_controller.js'
+
 
 const routes=express.Router()
 
-routes.get('/a',createuser)
+routes.post('/user/register',register)
 
-export default routes;
+export default routes
